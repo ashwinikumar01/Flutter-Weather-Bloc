@@ -3,6 +3,7 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_weather_bloc/blocs/blocs.dart';
+import 'package:flutter_weather_bloc/widgets/location.dart';
 
 class Weather extends StatelessWidget {
   @override
@@ -46,8 +47,9 @@ class Weather extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 100.0),
                     child: Center(
-                      child: Location(location: weather.location),
-                    ),
+                        child: Location(
+                      location: weather.location,
+                    )),
                   ),
                   Center(
                     child: LastUpdated(dateTime: weather.lastUpdated),
