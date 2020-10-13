@@ -2,7 +2,11 @@
 
 A new Flutter project.
 
-## Getting Started
+## Samples
+
+<img src="https://github.com/ashwinikumar01/Flutter-Weather-Bloc//Screenshots/ui.png" width="250"> &nbsp;&nbsp;&nbsp;&nbsp;
+
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
