@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
+import 'package:flutter_weather_bloc/blocs/blocs.dart';
 import 'package:flutter_weather_bloc/models/weather.dart';
 import 'package:meta/meta.dart';
-import 'package:flutter_weather_bloc/blocs/blocs.dart';
 import 'package:flutter_weather_bloc/repositories/repositories.dart';
 
 class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
@@ -20,7 +20,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
         final Weather weather = await weatherRepository.getWeather(event.city);
         yield WeatherLoadSuccess(weather: weather);
       } catch (e) {
-        WeatherLoadFailre();
+        WeatherLoadFailure();
       }
     }
   }
