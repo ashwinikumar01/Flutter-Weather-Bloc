@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Samples
 
-<img src="https://github.com/ashwinikumar01/Flutter-Weather-Bloc//Screenshots/ui.png" width="250"> &nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://github.com/ashwinikumar01/Flutter-Weather-Bloc/blob/Screenshots/ui.png" width="250"> &nbsp;&nbsp;&nbsp;&nbsp;
 
 ### Getting Started
 
