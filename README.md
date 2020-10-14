@@ -5,6 +5,8 @@ A new Flutter project.
 ## Samples
 
 ![ui](https://user-images.githubusercontent.com/69667369/95907632-76500a80-0db9-11eb-8b88-c7b47135d713.png)
+
+
 ![flutter_weather](https://user-images.githubusercontent.com/69667369/96008113-d946ad80-0e5c-11eb-816f-3956fb0dbdee.gif)
 
 
