@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_weather_bloc/blocs/blocs.dart';
@@ -61,7 +59,9 @@ class Weather extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 50.0),
                     child: Center(
-                      child: CombinedWeatherTemperature(),
+                      child: CombinedWeatherTemperature(
+                        weather: weather,
+                      ),
                     ),
                   ),
                 ],
