@@ -6,6 +6,7 @@ import 'package:flutter_weather_bloc/repositories/repositories.dart';
 import 'package:flutter_weather_bloc/simple_bloc_observer.dart';
 import 'package:flutter_weather_bloc/widgets/weather.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_weather_bloc/widgets/widgets.dart';
 
 void main() {
   Bloc.observer = SimpleBlocObserver();

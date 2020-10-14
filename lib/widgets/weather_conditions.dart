@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_weather/models/models.dart';
 import 'package:flutter_weather_bloc/models/weather.dart';
 
 class WeatherConditions extends StatelessWidget {

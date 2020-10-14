@@ -27,8 +27,8 @@ class Weather extends Equatable {
   final DateTime lastUpdated; //live time
   final String location;
 
-  Weather(
-      this.condition,
+  const Weather(
+      {this.condition,
       this.formattedCondition,
       this.minTemp,
       this.temp,
@@ -36,7 +36,7 @@ class Weather extends Equatable {
       this.locationId,
       this.created,
       this.lastUpdated,
-      this.location);
+      this.location});
 
   @override
   List<Object> get props => [
