@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_weather_bloc/blocs/blocs.dart';
 import 'package:flutter_weather_bloc/blocs/theme/theme_bloc.dart';
-import 'package:flutter_weather_bloc/blocs/theme/theme_bloc.dart';
 import 'package:flutter_weather_bloc/repositories/repositories.dart';
 import 'package:flutter_weather_bloc/simple_bloc_observer.dart';
 import 'package:flutter_weather_bloc/widgets/weather.dart';
@@ -20,9 +19,18 @@ void main() {
   );
 
   runApp(
-    BlocProvider<ThemeBloc>(
-      create: (context) => ThemeBloc(),
-      child: App(weatherRepository: weatherRepository),
+    MultiBlocProvider(
+      providers: [
+        BlocProvider<ThemeBloc>(
+          create: (context) => ThemeBloc(),
+        ),
+        BlocProvider<SettingBloc>(
+          create: (context) => SettingBloc(),
+        ),
+      ],
+      child: App(
+        weatherRepository: weatherRepository,
+      ),
     ),
   );
 }
